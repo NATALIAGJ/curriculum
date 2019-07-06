@@ -13,7 +13,7 @@ const AboutAvatar = styled.div`
 const AboutImg = styled.img`
     border-radius: 100%;
     width: 160px;
-    heigth: 160px;
+    height: 160px;
     border: 2px solid #E91E63;
     margin: 0 auto;
     display: block;
@@ -26,8 +26,8 @@ const AboutName = styled.div`
 
 const AboutH2 = styled.h2`
     font-family: 'Roboto', sans-serif;
-    font-weigth: 400;
-    letter.spacing: 1.2px;
+    font-weight: 400;
+    letter-spacing: 1.2px;
     margin: .5em 0 0 0;
     color: #C2185B;
 `;
@@ -35,20 +35,20 @@ const AboutH2 = styled.h2`
 const AboutProfession = styled.p`
     margin: .2em 0 1em 0;
     letter-spacing: 1.6px;
-    font-weigth: 300;
+    font-weight: 300;
     color: #C2185B;
 `;
 
 const AboutBio = styled.p`
     color: #757575;
     font-size: 1em;
-    font-weigth: 300;
+    font-weight: 300;
 `;
 
 const AboutLocation = styled.p`
     color: #757575;
     font-size: 1em;
-    font-weigth: 400;
+    font-weight: 400;
 `;
 
 const About = ({ avatar, name, profession, bio, address, social }) => (
