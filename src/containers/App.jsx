@@ -9,20 +9,20 @@ import Experience from '../components/Experience';
 import Certificates from '../components/Certificates';
 import Skills from '../components/Skills';
 import useGetData from '../hooks/useGetData';
+import Loader from '../components/Loader';
 
 const GlobalStyle = createGlobalStyle`
     body {
         font-family: 'Lato', sans-serif;
         margin: 0;
         padding: 0;
-        background: #F5F5F5;
+        background: #FFFFFF;
     }
 `;
 
 const App = () => {
     const data = useGetData();
-    console.log(data);
-    return data.length === 0 ? <h1>Cargando...</h1> : (
+    return data.length === 0 ? <Loader /> : (
         <Main>
             <GlobalStyle />
             <Sidebar>

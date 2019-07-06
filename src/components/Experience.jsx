@@ -4,7 +4,6 @@ import H3Styled from "../styled/H3Styled";
 import PStyled from "../styled/PStyled";
 
 const Experience = props => (
-  console.log(props.data[0].jobTitle),
   <div className="Experience">
     <H2Styled name={"Experience"} />
     <div className="Experience-container">
