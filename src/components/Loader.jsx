@@ -2,6 +2,9 @@ import React from 'react'
 import styled from 'styled-components';
 
 const LoaderStyle = styled.div`
+    margin: 0;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     vertical-align: middle;
     position: relative;
