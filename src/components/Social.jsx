@@ -18,7 +18,7 @@ const SocialLi = styled.li`
 `;
 
 const SocialAnchor = styled.a`
-    color: #212121;
+    color: #898888;
     text-decoration: none;
     font-size: 1.2em;
 `;
