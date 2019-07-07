@@ -13,7 +13,7 @@ import Loader from '../components/Loader';
 
 const GlobalStyle = createGlobalStyle`
     body {
-        font-family: 'Lato', sans-serif;
+        font-family: 'Quicksand', sans-serif;
         margin: 0;
         padding: 0;
         background: #FFFFFF;
@@ -23,8 +23,34 @@ const GlobalStyle = createGlobalStyle`
 const App = () => {
     const data = useGetData();
     return data.length === 0 ? <Loader /> : (
-        <Loader />
-        
+        <Main>
+            <GlobalStyle />
+            <Sidebar>
+                <About 
+                    avatar={data.avatar}
+                    name={data.name}
+                    age={data.age}
+                    profession={data.profession}
+                    bio={data.bio}
+                    address={data.address}
+                    social={data.social}
+                />
+            </Sidebar>
+            <Info>
+                <Education 
+                    data={data.education}
+                />  
+                <Experience 
+                    data={data.experience}
+                />  
+                <Certificates 
+                    data={data.certificate}
+                />  
+                <Skills 
+                    data={data.skills}
+                />  
+            </Info>
+        </Main>        
     );
 }   
 

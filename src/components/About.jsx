@@ -22,14 +22,16 @@ const AboutImg = styled.img`
 
 const AboutName = styled.div`
     text-align: center;
+    border: white 5px solid;
+    background-color: #30a98f;
 `;
 
 const AboutH2 = styled.h2`
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30;
     letter-spacing: 1.2px;
     margin: .5em 0 0 0;
-    color: #75c4b2;
+    color: #FFFFFF;
 `;
 
 const AboutProfession = styled.p`
@@ -51,7 +53,7 @@ const AboutLocation = styled.p`
     font-weight: 400;
 `;
 
-const About = ({ avatar, name, profession, bio, address, social }) => (
+const About = ({ avatar, name, age, profession, bio, address, social }) => (
     <AboutStyle>
         <div className="About-container">
             <AboutAvatar>
@@ -61,6 +63,7 @@ const About = ({ avatar, name, profession, bio, address, social }) => (
             </AboutAvatar>
             <AboutName>
                 <AboutH2>{name}</AboutH2>
+                <AboutH2>{age}</AboutH2>
             </AboutName>
             <div className="About-profession">
                 <AboutProfession>{profession}</AboutProfession>
