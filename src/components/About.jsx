@@ -18,6 +18,18 @@ const AboutImg = styled.img`
     margin: 0 auto;
     display: block;
     box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    animation-name: beat;
+    animation-duration: 1s;
+    animation-iteration-count: 2;
+
+    @keyframes beat {
+        0% {
+            transform: scale(1) rotate(-35deg);
+        }
+        50% {
+            transform: scale(0.6) rotate(-35deg);
+        }
+    }
 `;
 
 const AboutName = styled.div`

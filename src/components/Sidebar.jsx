@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const SidebarStyle = styled.div`
-    background-color: #78c6b3;
+    background: linear-gradient(35deg, #CCFFFF, #FFCCCC);
 `;
 
 const Sidebar = ({ children }) => (

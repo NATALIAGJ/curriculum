@@ -1,4 +1,5 @@
 import React from 'react';
+import H2Styled from "../styled/H2Styled";
 import styled, { keyframes } from 'styled-components';
 
 const SkillsContainer = styled.div`
@@ -52,6 +53,7 @@ const SkillsSpan = styled.span`
 
 const Skills = props => (
     <div className="Skills">
+        <H2Styled name={"Tecnologías"} />
         <SkillsContainer>
             {props.data.map((skill, index) => (
                 <div className="Skills-item" key={`Skill-${index}`}>
