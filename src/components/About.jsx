@@ -63,7 +63,7 @@ const About = ({ avatar, name, age, profession, bio, address, social }) => (
             </AboutAvatar>
             <AboutName>
                 <AboutH2>{name}</AboutH2>
-                <AboutH2>{age}</AboutH2>
+                {/* <AboutH2>{age}</AboutH2> */}
             </AboutName>
             <div className="About-profession">
                 <AboutProfession>{profession}</AboutProfession>
