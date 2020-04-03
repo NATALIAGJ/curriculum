@@ -15,31 +15,37 @@ const LoaderStyle = styled.div`
 
 const SpanStyle = styled.span`
     display: block;
-    width: 20px;
-    height: 20px;
+    width: 35px;
+    height: 35px;
     background: #eee;
     border-radius: 50%;
     margin: 0 5px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    &:nth-child(1) {
+        background: url("https://res.cloudinary.com/simplecol/image/upload/v1585884179/github_ghasfi.png");
+    }
     &:nth-child(2) {
-        background: #f07e6e;
+        background: url("https://res.cloudinary.com/simplecol/image/upload/v1585883044/node_voqklq.png");
     }
     &:nth-child(3) {
-        background: #84cdfa;
+        background: url("https://res.cloudinary.com/simplecol/image/upload/v1585883204/js_xjjdmu.png");
     }
     &:nth-child(4) {
-        background: #5ad1cd;
+        background: url("https://res.cloudinary.com/simplecol/image/upload/v1585883340/mongo_cxd38j.png");
+    }
+    &:nth-child(5) {
+        background: url("https://res.cloudinary.com/simplecol/image/upload/v1585883509/react_pjadvb.png");
     }
     &:not(:last-child) {
         animation: animate 1.5s linear infinite;
     }
     @keyframes animate {
         0% {
-        transform: translateX(0);
+            transform: translateX(0);
         }
     
         100% {
-        transform: translateX(30px);
+            transform: translateX(110px);
         }
     }
     &:last-child {
@@ -76,6 +82,7 @@ const SpanStyle = styled.span`
 export default function Loader() {
     return (
         <LoaderStyle>
+            <SpanStyle />
             <SpanStyle />
             <SpanStyle />
             <SpanStyle />

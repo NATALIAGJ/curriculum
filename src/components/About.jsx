@@ -20,7 +20,7 @@ const AboutImg = styled.img`
     box-shadow: 0 0 10px rgba(0,0,0,0.6);
     animation-name: beat;
     animation-duration: 1s;
-    animation-iteration-count: 2;
+    animation-iteration-count: 1;
 
     @keyframes beat {
         0% {

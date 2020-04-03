@@ -53,7 +53,8 @@ const SkillsSpan = styled.span`
 
 const Skills = props => (
     <div className="Skills">
-        <H2Styled name={"Tecnologías"} />
+        <H2Styled name={"Habilidades"} />
+        <br></br>
         <SkillsContainer>
             {props.data.map((skill, index) => (
                 <div className="Skills-item" key={`Skill-${index}`}>
