@@ -7,6 +7,7 @@ const SidebarStyle = styled.div`
 
 const Sidebar = ({ children }) => (
     <SidebarStyle>
+        
         <div className="sidebar-container">
             {children}
         </div>
